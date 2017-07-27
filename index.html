@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		CRICLOVERZ
+	</title>
+	<!-- linking the bootstrap CSS with HTML page  -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<style>
+		
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		#section_left{
+			border:1px solid #000000;
+			background-color: #d3d3d3;
+		}
+		#background-image{
+			background:url("images/main_image.jpg");
+			background-attachment: fixed;
+		}
+		.slide{
+			width: 100%;
+			height: 100%;
+		}
+		#slider{
+			overflow: hidden;
+			width: 700px;
+			height: 500px;
+		}
+		#home1{
+			width: 100%;
+			height: 100%;
+			margin-bottom: 20px;
+		}
+		#news1{
+			border: 1px solid #000000;
+			background-color: #e3e3e3;
+		}
+		#news_head{
+			background-color: #000;
+			color: #fff;
+			text-align: center;
+			margin-top: 0;
+			font-weight: bold;
+			font-family: verdana;
+		}
+		#gallery_head{
+			text-align: center;
+			font-weight: bold;
+			font-family: verdana;
+			margin-top: 10px;	
+		}
+		.all_news{
+			border-radius: 10%;
+		}
+		.gallery_body{
+			margin-bottom:10px;
+			/*padding: 10px;*/
+		}
+		.gallery_images:hover{
+			width: 400px;
+			height: 300px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="background-image">
+	<!-- navbar start -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse"><!-- This data target will target div with id collapse -->
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<img src="images/logo.png" height="50" width="150">
+		</div>	<!-- End of navbar header -->
+
+<!-- ===================================================================================================================================================================== -->
+
+		<!-- container start -->
+		<div class="container">
+			<div class="collapse navbar-collapse" id="collapse"> <!-- here is the id of collapse which will be target by data-target above -->
+				<ul class="nav navbar-nav" id="navbar1">
+					<li class="active"><a id="home" href="#home1">HOME</a></li>
+					<li><a id="news" href="#news1">NEWS</a></li>
+					<li><a id="photos" href="#photos1">PHOTOS</a></li>
+					<li><a id="writers" href="#writers1">WRITERS</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+					<li><a href="form.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				</ul>
+			</div>
+				
+		</div> <!-- End of container  -->
+	</nav><!-- End of navbar  -->
+
+<!-- ===================================================================================================================================================================== -->
+
+	<!-- jumbotron starts -->
+	<div class="jumbotron">
+		<div class="container" id="home1"> <!-- Another Container Starts -->
+			<h2>CricLoverZ</h2>
+			<p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</small></p>
+			<div class="btn btn-group" style="float: right">
+				<a href="javascript:void(0)" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-save"></span> Download App</a>
+			</div>	
+		</div> <!-- Container Ends -->
+	</div> <!-- Jumbotron Ends -->
+
+<!-- ===================================================================================================================================================================== -->
+
+	<!-- Container Starts -->
+	<div class="container">
+		<section>
+
+
+		<!-- ==================== Home portion stats ==============================-->
+			<div class="row">
+				<!-- The left sections is for live updates -->
+				<div class="col-lg-4 col-md-4 col-sm-3 col-xs-12" id="section_left">
+					<h3 align="center">
+						Live updates
+					</h3>
+					<blockquote>
+						<p align="justify">
+							There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
+						</p>
+						<footer><b>Mike Karson</b></footer>
+					</blockquote>
+				</div><!-- Live updates end -->
+
+				<!-- Slider starts -->
+				<div class="col-lg-8 col-md-8 col-sm-9 col-xs-12" id="section_right">
+					<div id="slider">
+						<img src="images/111.jpg" class="slide">
+						<img src="images/112.jpg" class="slide">
+						<img src="images/113.jpg" class="slide">
+						<img src="images/114.jpg" class="slide">
+						<img src="images/115.jpg" class="slide">
+						<img src="images/116.jpg" class="slide">	
+					</div>
+				</div> <!-- Slider Ends	 -->
+			</div>
+		</section>
+			<!--====================== Home portion ends ==========================-->
+			
+
+
+			<!--====================== News portion starts  =======================-->
+		<section>	
+			<div class="row" id="news1">
+				<h1 id="news_head">News</h1>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 all_news">
+					<blockquote>
+						<header>
+							<h3>
+								Pakistan News
+							</h3>
+						</header>
+						<p>
+							The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+						</p>
+						<footer>
+							Najam shetty
+						</footer>
+					</blockquote>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 all_news">
+					<blockquote>
+						<header>
+							<h3>
+								India News
+							</h3>
+						</header>
+						<p>
+							 Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+						</p>
+						<footer>
+							 Vijay Shastri
+						</footer>
+					</blockquote>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 all_news">
+					<blockquote>
+						<header>
+							<h3>
+								Srilanka News
+							</h3>
+						</header>
+						<p>
+							It has roots in a piece of classical Latin literature from 45 BC, making it over 1800 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+						</p>
+						<footer>
+							Vishnu Iyer
+						</footer>
+					</blockquote>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 all_news">
+					<blockquote>
+						<header>
+							<h3>
+								Bangladesh News
+							</h3>
+						</header>
+						<p>
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+						</p>
+						<footer>
+							Hasan bin saqib
+						</footer>
+					</blockquote>		
+				</div>
+			</div>
+		</section>
+			<!--================= News portion end ===============================-->
+
+			<!--================== Photos portion starts ==========================-->
+		<section>
+			<div id="photos1">
+				<h1 id="gallery_head">
+					Gallary	
+				</h1>
+				
+				<div class="row gallery_body">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/1.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000; overflow: hidden;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/2.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/3.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/4.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+				</div>
+				<div class="row gallery_body">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/1.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000 ;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/2.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/3.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/4.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+				</div>
+				<div class="row gallery_body">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/1.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000 ;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/2.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/3.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/4.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+				</div>
+				<div class="row gallery_body">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/1.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000 ;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/2.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/3.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+						<img src="images/4.jpg" class="gallery_images" width="280" height="180" style="border: 1px solid #000000;">
+					</div>
+				</div>
+			</div>
+		</section>
+			<!-- ==================photos portion end============================ -->
+
+
+
+
+
+	</div> <!-- Container Ends -->
+</div>
+	<script type="text/javascript" src="JS/jquery.js"></script>
+	<script type="text/javascript" src="JS/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="JS/angular.min.js"></script>
+	<script type="text/javascript" src="bootstrap/JS/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="JS/app.js"></script>
+</body>
+</html>
